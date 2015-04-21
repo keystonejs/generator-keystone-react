@@ -81,6 +81,9 @@ var TestGenerator = yeoman.generators.Base.extend({
   },
 
   install: function() {
+    this.log('\n' + chalk.green('Running an npm install...') +
+    '\n'
+    );
     this.npmInstall();
   },
 
