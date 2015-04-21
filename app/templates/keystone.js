@@ -2,8 +2,8 @@ var keystone = require('keystone');
 
 keystone.init({
 
-	'name': 'TLC Map Draft',
-	'brand': 'TLC Map Draft',
+	'name': '<%= projectKey %>',
+	'brand': '<%= projectKey %>',
 	
 	'less': 'public',
 	'static': 'public',
