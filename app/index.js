@@ -13,7 +13,7 @@ var TestGenerator = yeoman.generators.Base.extend({
     var done = this.async();
 
 
-    this.log(yosay('Welcome to ' + chalk.green('Keystone-React') + ' generator!'));
+    this.log(yosay('Welcome to the ' + chalk.green('Keystone-React') + ' generator!'));
 
     var prompts = [{
       type: 'input',
