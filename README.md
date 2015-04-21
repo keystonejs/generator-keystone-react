@@ -2,6 +2,8 @@
 
 > [Yeoman](http://yeoman.io) generator
 
+Builds a simple scaffold for a KeystoneJS + React project, using browserify to pull it all together.
+
 
 ## Getting Started
 
