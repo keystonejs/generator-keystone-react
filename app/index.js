@@ -94,7 +94,7 @@ var TestGenerator = yeoman.generators.Base.extend({
   },
 
   end: function() {
-    var cmd = (this.newDirectory ? '"cd ' + utils.slug(this.projectName) + '" then ' : '') + '"node keystone"';
+    var cmd = (this.createDirectory ? '"cd ' + utils.slug(this.projectName) + '" then ' : '') + '"node keystone"';
     this.log(
       '\n' + chalk.green.underline('Your new project is ready!') +
       '\n' +
