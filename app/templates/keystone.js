@@ -10,13 +10,13 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': 'x&4C-Q;.rT(/m3xZ8oANKU8o1o2GGFxoROCm8{2#HK3z.>@G9UPFvSFgkW[0xxWI',
-	
+	'cookie secret': '<%= cookieSecret %>',
+
 });
 
 keystone.import('models');

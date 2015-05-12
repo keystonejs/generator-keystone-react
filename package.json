@@ -23,8 +23,9 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.18.9",
     "chalk": "^1.0.0",
+    "keystone-utils": "^0.1.13",
+    "yeoman-generator": "^0.18.9",
     "yosay": "^1.0.2"
   },
   "devDependencies": {
