@@ -1,5 +1,4 @@
 'use strict';
-var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var utils = require('keystone-utils');
 var yeoman = require('yeoman-generator');
@@ -95,12 +94,11 @@ var TestGenerator = yeoman.generators.Base.extend({
   },
 
   end: function() {
-    var chdir = this.createDirectory ? '"cd ' + this.projectKey + '" then ' : '';
+    var cmd = (this.newDirectory ? '"cd ' + utils.slug(this.projectName) + '" then ' : '') + '"node keystone"';
     this.log(
       '\n' + chalk.green.underline('Your new project is ready!') +
       '\n' +
-      '\n' +
-      '\nType ' + chdir + '"node keystone" to start the server.' +
+      '\n\nTo start your new website, run ' + cmd + '.' +
       '\n'
     );
   }
