@@ -2,9 +2,9 @@ var keystone = require('keystone');
 
 keystone.init({
 
-	'name': '<%= projectKey %>',
-	'brand': '<%= projectKey %>',
-	
+	'name': '<%= projectName %>',
+	'brand': '<%= projectName %>',
+
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
