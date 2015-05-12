@@ -1,5 +1,6 @@
 'use strict';
 var chalk = require('chalk');
+var _ = require('lodash');
 var utils = require('keystone-utils');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
@@ -12,7 +13,6 @@ var TestGenerator = yeoman.generators.Base.extend({
 
   prompting: function() {
     var done = this.async();
-
 
     this.log(yosay('Welcome to the ' + chalk.green('Keystone-React') + ' generator!'));
 
@@ -30,8 +30,8 @@ var TestGenerator = yeoman.generators.Base.extend({
 
     this.prompt(prompts, function(props) {
       this.log('\n');
-      this._.extend(this, props);
-      this.projectKey = this._.slugify(this.projectName).toLowerCase();
+      _.extend(this, props);
+      this.projectKey = utils.slug(this.projectName);
       if (props.createDirectory) {
         this.destinationRoot(this.projectKey);
       }
