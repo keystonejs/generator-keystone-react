@@ -1,6 +1,8 @@
 'use strict';
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
+var utils = require('keystone-utils');
+var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 
 var TestGenerator = yeoman.generators.Base.extend({
@@ -19,7 +21,7 @@ var TestGenerator = yeoman.generators.Base.extend({
       type: 'input',
       name: 'projectName',
       message: 'What is the name of your project?',
-      default: 'Keystone-React'
+      default: 'My Site'
     }, {
       type: 'confirm',
       name: 'createDirectory',
@@ -36,6 +38,11 @@ var TestGenerator = yeoman.generators.Base.extend({
       }
       done();
     }.bind(this));
+  },
+
+  keys: function keys() {
+    var cookieSecretChars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz!@#$%^&*()-=_+[]{}|;:",./<>?`~';
+    this.cookieSecret = utils.randomString(64, cookieSecretChars);
   },
 
   writing: {
