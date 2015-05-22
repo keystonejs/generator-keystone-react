@@ -5,7 +5,7 @@ var utils = require('keystone-utils');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 
-var TestGenerator = yeoman.generators.Base.extend({
+var KeystoneGenerator = yeoman.generators.Base.extend({
 
   initializing: function() {
     this.pkg = require('../package.json');
@@ -104,4 +104,4 @@ var TestGenerator = yeoman.generators.Base.extend({
   }
 });
 
-module.exports = TestGenerator;
+module.exports = KeystoneGenerator;
