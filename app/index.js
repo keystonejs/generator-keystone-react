@@ -87,7 +87,7 @@ var KeystoneGenerator = yeoman.generators.Base.extend({
   },
 
   install: function() {
-    this.log('\n' + chalk.green('Running an npm install...') +
+    this.log('\n' + chalk.green('Running npm install...') +
     '\n'
     );
     this.npmInstall();
@@ -98,7 +98,7 @@ var KeystoneGenerator = yeoman.generators.Base.extend({
     this.log(
       '\n' + chalk.green.underline('Your new project is ready!') +
       '\n' +
-      '\n\nTo start your new website, run ' + cmd + '.' +
+      '\n\nTo start Keystone, run ' + cmd + '.' +
       '\n'
     );
   }
