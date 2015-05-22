@@ -3,7 +3,6 @@ var chalk = require('chalk');
 var _ = require('lodash');
 var utils = require('keystone-utils');
 var yeoman = require('yeoman-generator');
-var yosay = require('yosay');
 
 var KeystoneGenerator = yeoman.generators.Base.extend({
 
@@ -14,7 +13,7 @@ var KeystoneGenerator = yeoman.generators.Base.extend({
   prompting: function() {
     var done = this.async();
 
-    this.log(yosay('Welcome to the ' + chalk.green('Keystone-React') + ' generator!'));
+    this.log('\nWelcome to the ' + chalk.green('Keystone React') + ' generator!\n');
 
     var prompts = [{
       type: 'input',

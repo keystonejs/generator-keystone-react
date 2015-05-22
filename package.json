@@ -33,8 +33,7 @@
     "chalk": "^1.0.0",
     "keystone-utils": "^0.1.13",
     "lodash": "^3.9.1",
-    "yeoman-generator": "^0.20.1",
-    "yosay": "^1.0.4"
+    "yeoman-generator": "^0.20.1"
   },
   "devDependencies": {
     "mocha": "*"
