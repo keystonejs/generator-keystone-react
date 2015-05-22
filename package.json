@@ -1,15 +1,15 @@
 {
   "name": "generator-keystone-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "KeystoneJS + React Application Generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "leo7568/generator-keystone-react",
-  "author": {
-    "name": "Lenny Boyatzis",
-    "email": "lennyboyatzis@gmail.com",
-    "url": "https://github.com/leo7568"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keystonejs/generator-keystone-react.git"
   },
+  "author": "Jed Watson",
+  "homepage": "http://keystonejs.com/",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -21,6 +21,7 @@
   ],
   "keywords": [
     "keystone",
+    "keystonejs",
     "react",
     "reactjs",
     "website",
