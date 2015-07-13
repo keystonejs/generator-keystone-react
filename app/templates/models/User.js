@@ -16,8 +16,5 @@ User.schema.virtual('canAccessKeystone').get(function() {
 	return this.isAdmin;
 });
 
-// Clean toJSON
-require('../lib/modelToJSON')(User);
-
 User.defaultColumns = 'name, email, isAdmin';
 User.register();
