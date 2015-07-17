@@ -3,9 +3,6 @@ var browserify = require('browserify-middleware');
 var keystone = require('keystone');
 
 var importRoutes = keystone.importer(__dirname);
-var routes = {
-	api: importRoutes('./api')
-};
 
 // Setup Route Bindings
 exports = module.exports = function(app) {
