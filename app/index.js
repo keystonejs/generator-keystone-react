@@ -57,10 +57,6 @@ var KeystoneGenerator = yeoman.generators.Base.extend({
       this.copy('client/scripts/application.js', 'client/scripts/application.js');
     },
 
-    libfiles: function() {
-      this.copy('lib/modelToJSON.js', 'lib/modelToJSON.js');
-    },
-
     modelfiles: function() {
       this.copy('models/User.js', 'models/User.js');
     },
