@@ -8,7 +8,9 @@ var importRoutes = keystone.importer(__dirname);
 exports = module.exports = function(app) {
 
 	app.use('/js', browserify('./client/scripts', {
-		transform: [babelify]
+		transform: [babelify.configure({
+			plugins: ['object-assign']
+		})]
 	}));
 
 	// Views
