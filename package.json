@@ -1,6 +1,6 @@
 {
   "name": "generator-keystone-react",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "KeystoneJS + React Application Generator",
   "license": "MIT",
   "main": "app/index.js",
