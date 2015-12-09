@@ -1,5 +1,6 @@
 'use strict';
 var chalk = require('chalk');
+var crypto = require('crypto');
 var _ = require('lodash');
 var utils = require('keystone-utils');
 var yeoman = require('yeoman-generator');
@@ -39,8 +40,7 @@ var KeystoneGenerator = yeoman.generators.Base.extend({
   },
 
   keys: function keys() {
-    var cookieSecretChars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz!@#$%^&*()-=_+[]{}|;:",./<>?`~';
-    this.cookieSecret = utils.randomString(64, cookieSecretChars);
+    this.cookieSecret = crypto.randomBytes(64).toString('hex');
   },
 
   writing: {
