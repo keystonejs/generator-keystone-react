@@ -9,7 +9,7 @@
     "browserify-middleware": "^7.0.0",
     "keystone": "^0.3.13",
     "model-transform": "^2.0.0",
-    "react": "^0.13.3",
+    "react": "^0.14.3",
     "request": "^2.60.0",
     "store-prototype": "^1.1.1",
     "underscore": "^1.8.3"
