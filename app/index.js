@@ -48,7 +48,6 @@ var KeystoneGenerator = yeoman.generators.Base.extend({
 			this.copy('keystone.js', 'keystone.js');
 			this.copy('editorconfig', '.editorconfig');
 			this.copy('gitignore', '.gitignore');
-			this.copy('jshintrc', '.jshintrc');
 			this.copy('Procfile', 'Procfile');
 			this.template('_package.json', 'package.json');
 		},
