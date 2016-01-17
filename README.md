@@ -28,4 +28,4 @@ yo keystone-react
 
 ## License
 
-MIT
+[MIT License](http://en.wikipedia.org/wiki/MIT_License). Copyright (c) 2016 Jed Watson.
